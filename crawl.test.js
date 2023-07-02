@@ -55,10 +55,8 @@ test("getUrlsFromHTML relative ", () => {
     <html>
       <body>
           <a href="/home/">Home</a>
-      
       </body>
     </html>
-    
     `;
   const baseURL = "https://chetan.com";
   const actual = getUrlsFromHTML(inputHTMLBody, baseURL);
@@ -72,10 +70,8 @@ test("getUrlsFromHTML both relative and absolute ", () => {
         <body>
         <a href="https://chetan.com/home/">Home</a>
             <a href="/about/">Home</a>
-        
         </body>
       </html>
-      
       `;
   const baseURL = "https://chetan.com";
   const actual = getUrlsFromHTML(inputHTMLBody, baseURL);
@@ -90,7 +86,6 @@ test("getUrlsFromHTML invalid url", () => {
           <a href="invalid">invalid</a>         
           </body>
         </html>
-        
         `;
   const baseURL = "https://chetan.com";
   const actual = getUrlsFromHTML(inputHTMLBody, baseURL);
