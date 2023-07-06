@@ -1,2 +1,2 @@
 # web-crawler
-- a commandline tool to scrape a website
+- a command line tool to scrape a website
